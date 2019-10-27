@@ -15,8 +15,9 @@
 <body>
   <script>
   function validate() {
-    alert("got to validation function");
+
     var username = document.forms["myform"]["username"].value;
+    alert("username is: ", username);
     if (x == "") {
       alert("Name must be filled out");
       return false;
