@@ -16,7 +16,7 @@
   <script>
   function validate() {
 
-    var username = document.forms["myform"]["username"].value;
+    var username = document.forms["myform"]["email"].value;
     alert("username is: ", username);
     if (x == "") {
       alert("Name must be filled out");
@@ -28,9 +28,9 @@
     }
   }
   </script>
-  <form id="form_id" method="post" name="myform" onsubmit="return validate()">
+  <form id="form_id" method="post" name="myform">
     Enter Email:<br>
-    <input type="email" name="username" id="username"><br>
+    <input type="email" name="email" id="email"><br>
     Enter Password:<br>
     <input type="password" name="password" id="password">
     <input type="submit" value="Submit">
