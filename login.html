@@ -28,12 +28,12 @@
     }
   }
   </script>
-  <form id="form_id" method="post" name="myform">
+  <form id="form_id" method="post" name="myform" onsubmit="return validate()">
     Enter Email:<br>
     <input type="email" name="username" id="username"><br>
     Enter Password:<br>
     <input type="password" name="password" id="password">
-    <input type="button" value="Login" id="submit" onclick="validate()"/>
+    <input type="submit" value="Submit">
   </form>
 
 
