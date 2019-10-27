@@ -15,10 +15,14 @@
 <body>
   <script>
   function validate() {
-    var x = document.forms["myform"]["username"].value;
+    var username = document.forms["myform"]["username"].value;
     if (x == "") {
       alert("Name must be filled out");
       return false;
+    }
+    else{
+      alert("username is:", username);
+      return true;
     }
   }
   </script>
