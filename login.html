@@ -7,7 +7,7 @@
 
 <header>
   <script>
-  function validate() {
+  function validateForm() {
 
     var username = document.forms["myform"]["email"].value;
     //var username2 = document.getElemntById("email").value
@@ -30,10 +30,10 @@
 </header>
 <body>
 
-  <form id="form_id"  name="myform"  onsubmit="return validate()">
+  <form id="form_id"  name="myform"  onsubmit="return validateForm()">
     Enter Email:<br>
     <input type="email" name="email" id="email"><br>
-    Enter Password: <br>
+    Enter Password:<br>
     <input type="password" name="password" id="password">
     <input type="submit" value="Submit">
   </form>
