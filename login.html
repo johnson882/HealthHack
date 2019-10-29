@@ -8,17 +8,17 @@
 <header>
   <script>
   function validateForm() {
-
-    var username = document.forms.myform.email.value;
+     var x = "";
+     var x = document.forms["myForm"]["email"].value;;
     //var username2 = document.getElemntById("email").value
-    alert("username is: ", username);
+    alert("username is: ", x);
     //alert("username is: ", username2);
-    if (username == "") {
+    if (x == "") {
       alert("Name must be filled out");
       return false;
     }
     else{
-      alert("username is:", username);
+      alert("username is:", x);
       return true;
     }
   }
