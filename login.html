@@ -8,9 +8,9 @@
 <header>
   <script>
   function validateForm() {
-     var email = "";
-   var form = document.getElementById('form_id');
-  var email = document.getElementById('email').value;
+     let email = "";
+   let form = document.getElementById('form_id');
+  let email = document.getElementById('email').value;
     // alert("Here this should work!!!!" + email);
 
 
@@ -18,10 +18,11 @@
        alert("Name must be filled out");
        return false;
      }
-     else{
+
+
        alert("username is:", email);
        return true;
-     }
+
 
   }
   </script>
