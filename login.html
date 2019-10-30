@@ -9,16 +9,18 @@
   <script>
   function validateForm() {
      var x = "";
-     var x = document.forms["myForm"]["email"].value;;
+     var x = document.forms.login;
+     alert("x = " + x);
     //var username2 = document.getElemntById("email").value
-    alert("username is: ", x);
+  var y =  x.email.value;
+    alert("username is: ", y);
     //alert("username is: ", username2);
     if (x == "") {
       alert("Name must be filled out");
       return false;
     }
     else{
-      alert("username is:", x);
+      alert("username is:", y);
       return true;
     }
   }
