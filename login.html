@@ -8,10 +8,20 @@
 <header>
   <script>
   function validateForm() {
-     var x = "";
-   var x = document.getElementById('form_id');
-  var y = document.getElementById('email');
-     alert("Here this should work!!!!" + y.value);
+     var email = "";
+   var form = document.getElementById('form_id');
+  var email = document.getElementById('email').value;
+     alert("Here this should work!!!!" + email);
+
+
+     if (email == "") {
+       alert("Name must be filled out");
+       return false;
+     }
+     else{
+       alert("username is:", username);
+       return true;
+     }
  /*
      var form = document.getElementByID('form');
      alert("yo!");
@@ -25,14 +35,7 @@
   //var y =  x["email"].name;
   //  alert("username is: ", y);
     //alert("username is: ", username2);
-    if (x == "") {
-      alert("Name must be filled out");
-      return false;
-    }
-    else{
-      alert("username is:", x);
-      return true;
-    } */
+  */
   }
   </script>
   <nav class="w3-bar w3-black">
