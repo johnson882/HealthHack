@@ -8,12 +8,12 @@
 <header>
   <script>
   function validateForm() {
-
+    let email = "";
    let form = document.getElementById('form_id');
-  let email = document.getElementById('email').value;
+   email = document.getElementById('email').value;
      alert("Here this should work!!!!" + typeof(email));
 
-if(email == null){
+if(email == null || email == ""){
   alert("nothing entereted!")
   return false;
 }else{
