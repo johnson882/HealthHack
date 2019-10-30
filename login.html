@@ -13,7 +13,13 @@
   let email = document.getElementById('email').value;
      alert("Here this should work!!!!" + email);
 
-
+if(email == null || email = ""){
+  alert("nothing entereted!")
+  return false;
+}else{
+  alert("email entered: " + email);
+  return true;
+}
 
  /*
      var form = document.getElementByID('form');
